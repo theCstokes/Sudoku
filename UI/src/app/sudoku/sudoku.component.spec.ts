@@ -5,6 +5,7 @@ import { ActionButtonComponent } from "src/app/action-button/action-button.compo
 import { HttpClientModule } from "@angular/common/http";
 import { HttpClientTestingModule } from "@angular/common/http/testing";
 import SudokuCell from "src/core/Models/SudokuCell";
+import { MatProgressSpinnerModule } from "@angular/material";
 
 describe('SudokuComponent', () => {
   let component: SudokuComponent;
@@ -12,8 +13,8 @@ describe('SudokuComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule],
-      declarations: [SudokuComponent, ActionButtonComponent ]
+      imports: [HttpClientTestingModule, MatProgressSpinnerModule],
+      declarations: [SudokuComponent, ActionButtonComponent]
     })
     .compileComponents();
   }));
