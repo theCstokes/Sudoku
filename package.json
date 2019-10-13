@@ -10,7 +10,7 @@
     "buildUI": "cd UI && npm run build",
     "api": "cd API && npm start",
     "ui": "cd UI && npm run startProd",
-    "configureReverseProxy": "sh Build/build.sh",
+    "configureReverseProxy": "sh Nginx/build.sh",
     "test": "npm run testAPI && npm run testUI",
     "testAPI": "cd API && npm test",
     "testUI": "cd UI && npm run testOnce"
