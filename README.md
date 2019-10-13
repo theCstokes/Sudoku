@@ -17,7 +17,7 @@ Sudoku requires the following to run:
 If you are using Ubuntu, installing Nginx can be accomplished 
 using the following command:
 
-**Note: This may require super user privates.**
+**Note: This may require super user privileges.**
 
 ```bash
 sudo apt-get install nginx
@@ -27,7 +27,7 @@ sudo apt-get install nginx
 Once npm has been installed, installing typescript is as easy
 as running the following command:
 
-**Note: This may require super user privates.**
+**Note: This may require super user privileges.**
 
 ```bash
 sudo npm install -g typescript
@@ -37,7 +37,7 @@ sudo npm install -g typescript
 In addition to typescript, once npm has been installed, 
 installing angular can be accomplished with the following command:
 
-**Note: This may require super user privates.**
+**Note: This may require super user privileges.**
 
 ```bash
 npm install -g @angular/cli
@@ -64,7 +64,7 @@ npm run build
 
 ## Usage
 ##### API
-To start start the API use the following command:
+To start the API use the following command:
 
 ```bash
 npm run api
@@ -90,14 +90,14 @@ Found here: [localhost:4200](localhost:4200)
 
 To enable Nginx reverse proxy run the following command:
 
-**Note: This may require super user privates.**
+**Note: This may require super user privileges.**
 
 ```bash
 npm run configureReverseProxy
 ```
 
 This will configure Nginx reverse proxy. Enabling the API 
-and the UI to be accessible from to port 3001. 
+and the UI to be accessible from port 3001. 
 Found here: [localhost:3001](localhost:3001)
 
 ## Instructions
