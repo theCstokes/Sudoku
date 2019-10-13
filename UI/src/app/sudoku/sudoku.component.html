@@ -1,0 +1,39 @@
+<div class="sudoku"
+     [ngClass]="{
+        'loading': boardData === undefined || boardData.length === 0
+        }">
+  <div class="spinner">
+    <mat-progress-spinner
+      [color]="'accent'"
+      [mode]="'indeterminate'">
+    </mat-progress-spinner>
+  </div>
+
+  <div class="content">
+    <table id="grid" class="sudoku-board">
+
+      <tr *ngFor="let row of boardData" class="row">
+        <td *ngFor="let item of row" class="data-item"
+            (click)="onCellClick(item.rowIndex, item.columnIndex)"
+            [ngClass]="{
+        'left': hasLeftBoarder(item),
+        'right': hasRightBoarder(item),
+        'top': hasTopBoarder(item),
+        'bottom': hasBottomBoarder(item)
+        }">
+          <input id="cell-0" type="text" value={{item.value}} disabled class="data-input"
+                 [ngClass]="{
+             'locked': item.isLocked
+             }">
+        </td>
+      </tr>
+    </table>
+
+    <div class="action-bar">
+      <app-action-button [text]="'Reload'"
+                         (onClick)="onReload()"
+      ></app-action-button>
+    </div>
+  </div>
+</div>
+

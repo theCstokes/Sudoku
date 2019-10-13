@@ -1,0 +1,19 @@
+{
+  "name": "Sudoku",
+  "version": "1.0.0",
+  "scripts": {
+    "install": "npm run installAPI && npm run installUI",
+    "installAPI": "cd API && npm install",
+    "installUI": "cd UI && npm install",
+    "build": "npm run buildAPI && npm run buildUI && npm test",
+    "buildAPI": "cd API && npm run build",
+    "buildUI": "cd UI && npm run build",
+    "api": "cd API && npm start",
+    "ui": "cd UI && npm run startProd",
+    "configureReverseProxy": "sh Build/build.sh",
+    "test": "npm run testAPI && npm run testUI",
+    "testAPI": "cd API && npm test",
+    "testUI": "cd UI && npm run testOnce"
+  },
+  "dependencies": {}
+}

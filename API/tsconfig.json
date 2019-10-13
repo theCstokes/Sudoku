@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "outDir": "build",
+    "rootDir": "src",
+    "baseUrl": "src",
+    "sourceMap": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "paths": {
+      "Application/*": ["Application/*"] // resolve all modules prefixed with `@/` from `src` directory
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
